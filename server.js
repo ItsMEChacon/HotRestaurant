@@ -64,7 +64,7 @@ const addToTable = (reservation) => {
     let listItem = $("<li>");
 
     listItem.append(
-      $("<h2>").text("Table #" + (i + 1)),
+      $("<h2>").text("Table #" + (1)),
       $("<hr>"),
       $("<h2>").text("ID: " + id),
       $("<h2>").text("Name: " + name),
