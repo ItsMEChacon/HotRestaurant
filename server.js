@@ -62,9 +62,10 @@ const addToTable = (reservation) => {
     const {name, email, id, phoneNumber } = reservation;
 
     let listItem = $("<li>");
+    let tableNumber = reservedTables.length + 1;
 
     listItem.append(
-      $("<h2>").text("Table #" + (1)),
+      $("<h2>").text("Table #" + tableNumber),
       $("<hr>"),
       $("<h2>").text("ID: " + id),
       $("<h2>").text("Name: " + name),
@@ -78,9 +79,8 @@ const addToTable = (reservation) => {
 
 const addToWaitList = (reservation) => {
 
-    const {name, email, id, phoneNumber } = reservation;
-
-    
+    const { name, email, id, phoneNumber } = reservation;
+    // Post this to the waiting list
 
 
 }
